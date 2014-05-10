@@ -1,0 +1,8 @@
+# src/Snork/MyFirstBundle/Resources/config/database.yml
+
+parameters:
+    database_driver: pdo_mysql
+    database_host:      localhost
+    database_name:      test
+    database_user:      root
+    database_password:  1

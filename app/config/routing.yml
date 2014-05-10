@@ -1,0 +1,4 @@
+
+snork_myFirst:
+    resource: "@SnorkMyFirstBundle/Resources/config/routing.yml"
+    prefix: /

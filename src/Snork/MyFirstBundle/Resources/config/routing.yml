@@ -1,0 +1,19 @@
+# src/Snork/MyFirstBundle/Resources/config/routing.yml
+
+
+myFirst:
+    path: /myFirst/{lang}/{name}
+    defaults: { _controller: SnorkMyFirstBundle:MyFirst:index,lang: en, name: Stranger}
+
+blog:
+    path: /blog/{blogNoteId}
+    defaults: { _controller: SnorkMyFirstBundle:MyFirst:showBlogNote, blogNoteId: 1}
+
+index:
+    path: /
+    defaults: { _controller: SnorkMyFirstBundle:MyFirst:index, name: LevIndex}
+
+redirectTest:
+    path: /redirect-test
+    defaults: { _controller: SnorkMyFirstBundle:MyFirst:red}
+

@@ -1,0 +1,12 @@
+{# src/Snork/MyFirstBundle/Resources/views/MyFirst/index.html.twig #}
+
+{% extends '::base.html.twig' %}
+{% block head %}
+    <title>{% block title %} {{ blogNote.title  }}  {% endblock %}</title>
+{% endblock %}
+{% block body %}
+    <h3> {{ blogNote.title }}</h3>
+
+    <div class="content">{{ blogNote.content }}</div>
+    <div class="createdAt">{{ blogNote.createdAt }}</div>
+{% endblock %}

@@ -1,0 +1,53 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: akalie
+ * Date: 5/10/14
+ * Time: 6:10 PM
+ */
+
+namespace Snork\MyFirstBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Заметка
+ * Class BlogNote
+ * @package Snork\MyFirstBundle\Entity
+ * @ORM\Entity
+ * @ORM\Table(name="blog_notes")
+ */
+class BlogNote {
+
+    /**
+     * @var int
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $blogNoteId;
+
+    /**дата создания записи
+     * @var \DateTime
+     * @ORM\Column(type="datetime")
+     */
+    protected $createdAt;
+
+     /** id автора заметки
+     * @var int
+     * @ORM\Column(type="integer")
+     */
+    protected $authorId;
+
+    /** заголовок статьи
+     * @var string
+     * ORM\Column(type="string", length=150)
+     */
+    protected $title;
+
+    /** содержимое статьи
+     * @var string
+     * @ORM\Column(type="text")
+     */
+    protected $content;
+} 
